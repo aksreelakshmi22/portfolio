@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+</head>
+<body>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+     <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+     <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+    <div style="background-color:yellow;color: crimson;text-align: center;border: 2px solid black;">Post</div>
+
+</body>
+<script>
+    function addPost(){
+        const element=document.createElement("div");
+        element.innerHTML='<div style="background-color:red;border:2px solid black;"><h2>Post</h2></div>';
+        document.body.appendChild(element);
+
+    }
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        addPost();
+        }
+    };
+</script>
+</html>
